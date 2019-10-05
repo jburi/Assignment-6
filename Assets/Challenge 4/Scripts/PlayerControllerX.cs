@@ -29,6 +29,7 @@ public class PlayerControllerX : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
         focalPoint = GameObject.Find("Focal Point");
 		boost = focalPoint.GetComponent<ParticleSystem>();
+		boost.Stop();
 	}
 
     void Update()
